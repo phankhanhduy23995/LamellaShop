@@ -1,0 +1,37 @@
+{
+  "name": "equipment-management-2019",
+  "version": "1.0.0",
+  "description": "Build equipment management application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/phankhanhduy23995/Equipment-Management.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phankhanhduy23995/Equipment-Management/issues"
+  },
+  "homepage": "https://github.com/phankhanhduy23995/Equipment-Management#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "install": "^0.12.2",
+    "nodemon": "^1.18.10",
+    "npm": "^6.9.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "bluebird": "^3.5.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "pg": "^7.9.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^5.2.0"
+  }
+}
