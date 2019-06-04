@@ -15,5 +15,6 @@ apidoc
 logs
 
 /config/sequelize.json
-/config/ldap.json
 /config/email.json
+/config/apidoc.json
+/config/log4js.json
