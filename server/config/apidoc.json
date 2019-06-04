@@ -1,0 +1,11 @@
+{
+  "name": "Lamella Website",
+  "version": "1.0.0",
+  "description": "",
+  "title": "Lamella Website API document",
+  "url" : "http://localhost:8765",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}
