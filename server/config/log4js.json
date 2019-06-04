@@ -1,0 +1,22 @@
+{
+  "appenders": {
+    "out": {
+      "type": "stdout"
+    },
+    "app": {
+      "type": "dateFile",
+      "filename": "./logs/lamella",
+      "pattern": "-yyyy-MM-dd.log",
+      "alwaysIncludePattern": true
+    }
+  },
+  "categories": {
+    "default": {
+      "appenders": [
+        "out",
+        "app"
+      ],
+      "level": "debug"
+    }
+  }
+}
