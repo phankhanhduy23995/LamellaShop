@@ -66,17 +66,8 @@ exports.authorizeAdmin = function (req, res, next) {
     });
 };
 
-exports.authorizeHR = function (req, res, next) {
-  authorizeRoles([enums.ROLE.HR], req).then(() => {
-    next();
-  })
-    .catch(error => {
-      res.json(utils.failedResponse(error));
-    });
-};
-
-exports.authorizeAdminHR = function (req, res, next) {
-  authorizeRoles([enums.ROLE.ADMIN, enums.ROLE.HR], req).then(() => {
+exports.authorizeManager = function (req, res, next) {
+  authorizeRoles([enums.ROLE.MANAGER], req).then(() => {
     next();
   })
     .catch(error => {
@@ -85,7 +76,7 @@ exports.authorizeAdminHR = function (req, res, next) {
 };
 
 exports.authorizeAny = function (req, res, next) {
-  authorizeRoles([enums.ROLE.ADMIN, enums.ROLE.HR, enums.ROLE.EMPLOYEE], req).then(() => {
+  authorizeRoles([enums.ROLE.ADMIN, enums.ROLE.MANAGER, enums.ROLE.EMPLOYEE], req).then(() => {
     next();
   })
     .catch(error => {
