@@ -54,7 +54,3 @@ app.use(function (err, req, res) {
 });
 
 module.exports = app;
-
-// server.listen(port, hostname, () => {
-//   console.log(`Server running at http://${hostname}:${port}/`);
-// });

@@ -33,7 +33,7 @@ module.exports = {
         });
       })
       .then(function () {
-        return queryInterface.createTable('role_users', {
+        return queryInterface.createTable('user_roles', {
           id: { autoIncrement: true, primaryKey: true, type: Sequelize.INTEGER },
           role_id: {
             type: Sequelize.INTEGER,
@@ -48,7 +48,7 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('role_users')
+    return queryInterface.dropTable('user_roles')
       .then(function () {
         return queryInterface.dropTable('users');
       })
